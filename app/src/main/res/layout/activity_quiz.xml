@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary">
+
+		<android.support.design.widget.AppBarLayout
+			android:id="@+id/app_bar_quiz"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<android.support.design.widget.CollapsingToolbarLayout
+				android:id="@+id/collapsing_toolbar_quiz"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:layout_scrollFlags="scroll|exitUntilCollapsed"
+				app:titleEnabled="false">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="?android:attr/actionBarSize"
+					android:background="@color/colorPrimary"
+					android:orientation="vertical"
+					app:layout_collapseMode="parallax">
+
+					<android.support.v7.widget.CardView
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						xmlns:app="http://schemas.android.com/apk/res-auto"
+						xmlns:tools="http://schemas.android.com/tools"
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/profile_card_height"
+						android:layout_margin="@dimen/layout_margin"
+						app:cardCornerRadius="@dimen/card_corner_radius"
+						app:cardElevation="@dimen/card_elevation">
+
+						<ImageView
+							android:id="@+id/iv_quiz_card_bg"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:background="@drawable/bg_card_quiz"
+							android:scaleType="fitCenter"/>
+
+						<android.support.constraint.ConstraintLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							app:layout_optimizationLevel="standard|dimensions|chains">
+
+							<TextView
+								android:id="@+id/tvQuizCondition"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="@dimen/half_layout_margin"
+								android:layout_marginEnd="@dimen/half_layout_margin"
+								android:layout_marginStart="@dimen/half_layout_margin"
+								android:layout_marginTop="@dimen/half_layout_margin"
+								android:gravity="center"
+								android:textColor="@color/colorWhite"
+								android:textSize="@dimen/quiz_question_text_size"
+								app:layout_constraintBottom_toTopOf="parent"
+								app:layout_constraintEnd_toEndOf="parent"
+								app:layout_constraintStart_toStartOf="parent"
+								app:layout_constraintTop_toBottomOf="parent"
+								tools:text="asdasdasdasdasdasdasdassssssssssdffffffffffffffffffffffffffffffssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"/>
+						</android.support.constraint.ConstraintLayout>
+					</android.support.v7.widget.CardView>
+
+					<android.support.constraint.ConstraintLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="@dimen/half_layout_margin">
+
+							<TextView
+								android:id="@+id/profit_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginEnd="@dimen/layout_margin"
+								android:drawableEnd="@drawable/ic_coin"
+								android:drawablePadding="@dimen/tiny_layout_margin"
+								android:paddingEnd="@dimen/half_layout_margin"
+								android:paddingStart="@dimen/layout_margin"
+								android:textColor="@color/colorWhite"
+								android:textSize="@dimen/quiz_earned_text_size"
+								app:layout_constraintBottom_toBottomOf="@+id/score_info"
+								app:layout_constraintStart_toStartOf="parent"
+								tools:text="@string/progress_bar_earned_title"/>
+
+							<ImageView
+								android:id="@+id/score_info"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:paddingEnd="@dimen/layout_margin"
+								android:paddingStart="@dimen/half_layout_margin"
+								android:paddingTop="@dimen/layout_margin"
+								android:src="@drawable/ic_info"
+								app:layout_constraintEnd_toEndOf="parent"
+								app:layout_constraintTop_toTopOf="parent"/>
+
+						</android.support.constraint.ConstraintLayout>
+				</LinearLayout>
+
+				<android.support.v7.widget.Toolbar
+					android:id="@+id/toolbar_quiz"
+					android:layout_width="match_parent"
+					android:layout_height="?android:attr/actionBarSize"
+					android:background="@color/colorPrimary"
+					android:elevation="@dimen/layout_margin"
+					android:minHeight="?android:attr/actionBarSize"
+					android:theme="@style/ToolbarTheme"
+					app:layout_collapseMode="pin">
+				</android.support.v7.widget.Toolbar>
+			</android.support.design.widget.CollapsingToolbarLayout>
+		</android.support.design.widget.AppBarLayout>
+
+		<android.support.v4.widget.NestedScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/shape_content_top_rounded"
+			android:backgroundTint="@color/colorPrimaryDark"
+			android:padding="@dimen/layout_margin"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/colorPrimaryDark"
+					android:clipToPadding="false"
+					android:orientation="vertical"
+					android:paddingBottom="@dimen/layout_margin">
+
+					<TextView
+						android:id="@+id/score_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/half_layout_margin"
+						android:textColor="@color/colorWhite"
+						android:textSize="@dimen/quiz_earned_text_size"
+						android:layout_gravity="center"
+						tools:text="Ответы 0/10"/>
+
+					<Button
+						android:id="@+id/answer_A"
+						style="@style/AppTheme.Button.Quiz"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/layout_margin"
+						android:clickable="true"
+						android:focusable="true"
+						android:gravity="center"
+						android:padding="@dimen/half_layout_margin"
+						android:textColor="@color/colorWhite"
+						android:textSize="@dimen/quiz_earned_text_size"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						tools:text="kljgdf ldskfg s;dfg kl a sdasd asfgdfgd "/>
+
+					<Button
+						android:id="@+id/answer_B"
+						style="@style/AppTheme.Button.Quiz"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/layout_margin"
+						android:clickable="true"
+						android:focusable="true"
+						android:gravity="center"
+						android:padding="@dimen/half_layout_margin"
+						android:textColor="@color/colorWhite"
+						android:textSize="@dimen/quiz_earned_text_size"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@id/answer_A"
+						tools:text="asdasdasd aasd fdsdfs dfsdfg dfgfg"/>
+
+					<Button
+						android:id="@+id/answer_C"
+						style="@style/AppTheme.Button.Quiz"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/layout_margin"
+						android:clickable="true"
+						android:focusable="true"
+						android:gravity="center"
+						android:padding="@dimen/half_layout_margin"
+						android:textColor="@color/colorWhite"
+						android:textSize="@dimen/quiz_earned_text_size"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@id/answer_B"
+						tools:text="kljgdf ldskfg s;dfg kl asd asd asdasdsdf"/>
+
+					<Button
+						android:id="@+id/answer_D"
+						style="@style/AppTheme.Button.Quiz"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/layout_margin"
+						android:clickable="true"
+						android:focusable="true"
+						android:gravity="center"
+						android:padding="@dimen/half_layout_margin"
+						android:textColor="@color/colorWhite"
+						android:textSize="@dimen/quiz_earned_text_size"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@id/answer_C"
+						tools:text="asdasdasd aasd fdgdfg"/>
+				</LinearLayout>
+			</android.support.v4.widget.NestedScrollView>
+
+	<FrameLayout
+		android:id="@+id/quiz_answers_background"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clickable="true"
+		android:focusable="true"
+		android:visibility="gone">
+
+		<ImageView
+			android:id="@+id/ivAnswer"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"/>
+	</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

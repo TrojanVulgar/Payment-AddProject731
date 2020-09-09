@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		 android:id="@+id/navigation_tasks"
+		 android:enabled="true"
+		 android:icon="@drawable/ic_navigation_tasks"
+		 android:title="@string/navigation_tasks_title"
+		 app:showAsAction="ifRoom" />
+    <item
+		android:id="@+id/navigation_videos"
+		android:enabled="true"
+		android:icon="@drawable/ic_navigation_videos"
+		android:title="@string/navigation_videos_title"
+		app:showAsAction="ifRoom" />
+    <item
+		android:id="@+id/navigation_games"
+		android:enabled="true"
+		android:icon="@drawable/ic_navigation_games"
+		android:title="@string/navigation_games_title"
+		app:showAsAction="ifRoom" />
+	<item
+		android:id="@+id/navigation_more"
+		android:enabled="true"
+		android:icon="@drawable/ic_navigation_more"
+		android:title="@string/navigation_other_title"
+		app:showAsAction="ifRoom" />
+</menu>

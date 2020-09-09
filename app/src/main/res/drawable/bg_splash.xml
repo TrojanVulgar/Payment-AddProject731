@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<color android:color="@color/colorPrimary"/>
+	</item>
+
+	<item>
+		<bitmap android:src="@drawable/bg_start_activity"
+			android:gravity="fill_vertical|fill_horizontal"/>
+	</item>
+
+	<item
+		android:left="@dimen/layout_margin"
+		android:right="@dimen/layout_margin">
+		<bitmap
+			android:src="@drawable/logo"
+			android:gravity="fill_horizontal|center"/>
+	</item>
+</layer-list>

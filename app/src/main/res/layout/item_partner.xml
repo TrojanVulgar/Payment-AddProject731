@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/item_partner_height"
+	android:elevation="@dimen/elevation_layout_padding">
+
+	<ImageView
+		android:id="@+id/ivBackground"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/bg_partner_card_2"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<TextView
+		android:id="@+id/tvPartnerTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/layout_margin"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/default_text_size"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="Zadanie #80"/>
+
+	<Button
+		android:id="@+id/btnPartnerStart"
+		style="@style/AppTheme.Button.Small"
+		android:layout_width="@dimen/empty_dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/layout_margin"
+		android:layout_marginBottom="@dimen/layout_margin"
+		android:drawableEnd="@drawable/ic_arrow_right"
+		android:paddingBottom="@dimen/tiny_weeny_layout_margin"
+		android:paddingEnd="@dimen/small_view_padding"
+		android:paddingStart="@dimen/small_view_padding"
+		android:paddingTop="@dimen/tiny_weeny_layout_margin"
+		android:text="@string/partner_btn_title_start"
+		android:textSize="@dimen/small_text_size"
+		android:maxLines="1"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="@id/guideline2"/>
+
+	<android.support.constraint.Guideline
+		android:id="@+id/guideline2" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		app:layout_constraintGuide_percent="0.6"/>
+
+</android.support.constraint.ConstraintLayout>

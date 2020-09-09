@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/contentBackground"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/shape_task_rounded_view"
+	android:paddingBottom="@dimen/half_layout_margin"
+	android:elevation="@dimen/elevation_layout_padding">
+
+	<TextView
+		android:id="@+id/tvTaskAward"
+		android:layout_width="@dimen/empty_dp"
+		android:layout_height="@dimen/task_logo_size"
+		android:layout_marginEnd="@dimen/half_layout_margin"
+		android:layout_marginStart="@dimen/half_layout_margin"
+		android:background="@drawable/ic_task_flag"
+		android:textSize="@dimen/award_text_size"
+		android:gravity="center"
+		android:padding="@dimen/tiny_view_padding"
+		android:textColor="@color/colorWhite"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/ivTaskLogo"
+		tools:text="+10"/>
+
+	<ImageView
+		android:id="@+id/ivTaskLogo"
+		android:layout_width="@dimen/task_logo_size"
+		android:layout_height="@dimen/task_logo_size"
+		android:layout_margin="@dimen/layout_margin"
+		android:contentDescription="@string/cd_tasks_logo_image"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:src="@drawable/bg_tasks_card"/>
+
+	<TextView
+		android:id="@+id/tvTaskNumber"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/half_layout_margin"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/default_text_size"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/ivTaskLogo"
+		tools:text="Zadanie #80"/>
+
+	<Button
+		android:id="@+id/btnTaskStart"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/half_layout_margin"
+		android:text="@string/tasks_btn_title_start"
+		android:textSize="@dimen/default_text_size"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/tvTaskNumber"/>
+
+</android.support.constraint.ConstraintLayout>

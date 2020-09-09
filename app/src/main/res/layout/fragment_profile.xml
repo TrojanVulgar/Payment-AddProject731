@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary">
+
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorPrimary">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingBottom="@dimen/half_layout_margin">
+
+			<android.support.v7.widget.CardView
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/profile_card_height"
+				android:layout_margin="@dimen/layout_margin"
+				android:backgroundTint="@color/colorPrimary"
+				app:cardCornerRadius="@dimen/card_corner_radius"
+				app:cardElevation="@dimen/card_elevation">
+
+				<ImageView
+					android:id="@+id/ivProfileCard"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@drawable/bg_profile_level_1"
+					android:contentDescription="@string/cd_profile_card_background"
+					android:scaleType="fitCenter"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"/>
+
+				<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					app:layout_constraintGuide_percent="0.5">
+
+					<TextView
+						android:id="@+id/tvUsername"
+						android:layout_width="@dimen/empty_dp"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/layout_margin"
+						android:layout_marginStart="@dimen/half_layout_margin"
+						android:ellipsize="end"
+						android:maxLines="1"
+						android:text="@string/profile_additional_username_hint"
+						android:textColor="@color/colorWhite"
+						android:textSize="@dimen/profile_username_size"
+						app:layout_constraintBottom_toBottomOf="@id/guideline_top_content"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="@+id/guideline"/>
+
+					<TextView
+						android:id="@+id/tvLevel"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/half_layout_margin"
+						android:fontFamily="@font/roboto_light"
+						android:textColor="@color/colorProfileAction"
+						android:textSize="@dimen/profile_level_size"
+						app:layout_constraintStart_toStartOf="@id/guideline"
+						app:layout_constraintTop_toBottomOf="@id/guideline_top_content"
+						tools:text="Уровень 1 Солдат"/>
+
+					<android.support.constraint.Guideline android:id="@+id/guideline_top_content"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:orientation="horizontal" app:layout_constraintGuide_percent="0.20"/>
+
+					<Button
+						android:id="@+id/tvAdditionalInfo"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="@dimen/layout_margin"
+						android:layout_marginStart="8dp"
+						android:layout_marginEnd="@dimen/layout_margin"
+						android:drawableEnd="@drawable/ic_arrow_right"
+						android:paddingEnd="@dimen/half_layout_margin"
+						android:paddingStart="@dimen/layout_margin"
+						android:text="@string/profile_additional_btn_title"
+						android:textColor="@color/colorPrimary"
+						android:textSize="@dimen/profile_level_progress_item_title_size"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintStart_toStartOf="@+id/guideline"/>
+
+					<android.support.constraint.Guideline android:id="@+id/guideline_bottom_content"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:orientation="horizontal" app:layout_constraintGuide_percent="0.65"/>
+
+					<ProgressBar
+						android:id="@+id/pbOverallLevel"
+						style="?android:attr/progressBarStyleHorizontal"
+						android:layout_width="@dimen/empty_dp"
+						android:layout_height="@dimen/profile_overall_progress"
+						android:layout_marginBottom="@dimen/profile_progress_bottom_margin"
+						android:layout_marginEnd="@dimen/layout_margin"
+						android:progressDrawable="@drawable/profile_custom_progress_view"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="@id/tvOverallLevel"
+						app:layout_constraintTop_toBottomOf="@id/guideline_bottom_content"/>
+
+					<TextView
+						android:id="@+id/tvOverallLevel"
+						android:layout_width="@dimen/empty_dp"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="@dimen/half_layout_margin"
+						android:layout_marginStart="@dimen/half_layout_margin"
+						android:drawableEnd="@drawable/ic_star"
+						android:drawablePadding="@dimen/tiny_layout_margin"
+						android:gravity="center_vertical"
+						android:textColor="@color/colorWhite"
+						android:textSize="@dimen/profile_additional_size"
+						app:layout_constraintBottom_toTopOf="@id/guideline_bottom_content"
+						app:layout_constraintStart_toStartOf="@id/guideline"
+						tools:text="Общий прогресс: 1/10"/>
+
+					<android.support.constraint.Guideline android:id="@+id/guideline"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:orientation="vertical" app:layout_constraintGuide_percent="0.35"/>
+				</android.support.constraint.ConstraintLayout>
+			</android.support.v7.widget.CardView>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/divider_height_pixels"
+				android:background="@color/colorDivider"
+				android:layout_marginStart="@dimen/layout_margin"
+				android:layout_marginEnd="@dimen/layout_margin"
+				android:layout_marginTop="@dimen/layout_margin"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/layout_margin"
+				android:layout_marginTop="@dimen/layout_margin"
+				android:fontFamily="@font/font_arial_bold"
+				android:text="@string/profile_level_progress_title"
+				android:textColor="@color/colorWhite"
+				android:textSize="@dimen/title_text_size"/>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/rvLevelProgress"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:clipToPadding="false"
+				android:paddingBottom="@dimen/elevation_layout_padding"
+				android:paddingEnd="@dimen/mid_view_padding"
+				android:paddingStart="@dimen/mid_view_padding"
+				app:layoutManager="android.support.v7.widget.GridLayoutManager"
+				tools:listitem="@layout/item_details_progress"
+				tools:visibility="gone"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/divider_height_pixels"
+				android:background="@color/colorDivider"
+				android:layout_margin="@dimen/layout_margin"/>
+
+			<LinearLayout
+				android:id="@+id/contentProfileBalance"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="?attr/selectableItemBackground"
+				android:clickable="true"
+				android:focusable="true"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="2.5"
+					android:gravity="center_vertical"
+					android:padding="@dimen/layout_margin"
+					android:text="@string/profile_content_balance_title"
+					android:textColor="@color/colorWhite"
+					android:textSize="@dimen/default_text_size"/>
+
+				<TextView
+					android:id="@+id/tvProfileBalance"
+					android:layout_width="@dimen/empty_dp"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/layout_margin"
+					android:layout_weight="1.5"
+					android:drawableEnd="@drawable/ic_navigate_next"
+					android:drawablePadding="@dimen/tiny_view_padding"
+					android:gravity="center_vertical|end"
+					android:textColor="@color/colorWhite"
+					android:textSize="@dimen/default_text_size"
+					tools:text="123456789"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/contentProfileReferral"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="?attr/selectableItemBackground"
+				android:clickable="true"
+				android:focusable="true"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="2.5"
+					android:gravity="center_vertical"
+					android:padding="@dimen/layout_margin"
+					android:text="@string/referral_title"
+					android:textColor="@color/colorWhite"
+					android:textSize="@dimen/default_text_size"/>
+
+				<TextView
+					android:id="@+id/tvProfileReferral"
+					android:layout_width="@dimen/empty_dp"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/layout_margin"
+					android:layout_weight="1.5"
+					android:drawableEnd="@drawable/ic_navigate_next"
+					android:drawablePadding="@dimen/tiny_view_padding"
+					android:gravity="center_vertical|end"
+					android:textColor="@color/colorWhite"
+					android:textSize="@dimen/default_text_size"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/contentProfilePrivacy"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="?attr/selectableItemBackground"
+				android:clickable="true"
+				android:focusable="true"
+				android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="2.5"
+						android:gravity="center_vertical"
+						android:padding="@dimen/layout_margin"
+						android:text="@string/profile_content_policy_title"
+						android:textColor="@color/colorWhite"
+						android:textSize="@dimen/default_text_size"/>
+
+					<TextView
+						android:id="@+id/tvProfilePrivacy"
+						android:layout_width="@dimen/empty_dp"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/layout_margin"
+						android:layout_weight="1.5"
+						android:drawableEnd="@drawable/ic_navigate_next"
+						android:drawablePadding="@dimen/tiny_view_padding"
+						android:gravity="center_vertical|end"
+						android:textColor="@color/colorWhite"
+						android:textSize="@dimen/default_text_size"/>
+				</LinearLayout>
+		</LinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>
+
+

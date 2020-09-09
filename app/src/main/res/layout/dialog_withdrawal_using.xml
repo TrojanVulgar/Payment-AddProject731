@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="@drawable/shape_rounded_view"
+	android:backgroundTint="@color/colorPrimaryDark"
+	android:orientation="vertical"
+	android:paddingBottom="@dimen/mid_view_padding">
+
+	<FrameLayout
+		android:id="@+id/backgroundColorUsing"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimaryDark">
+
+		<ImageView
+			android:id="@+id/ivLogoUsing"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/withdrawal_logo_size"
+			android:layout_gravity="start|top"
+			android:layout_marginStart="@dimen/layout_margin"
+			android:layout_marginTop="@dimen/layout_margin"
+			android:contentDescription="@string/cd_image_for_withdrawal_logo"/>
+
+		<ImageView
+			android:layout_width="@dimen/withdrawal_dialog_gift_size"
+			android:layout_height="@dimen/withdrawal_dialog_gift_size"
+			android:layout_gravity="end"
+			android:background="@drawable/gift_card"
+			android:contentDescription="@string/cd_image_for_withdrawal_cards"/>
+
+		<ImageView
+			android:id="@+id/ivCloseUsing"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|top"
+			android:clickable="true"
+			android:contentDescription="@string/cd_info_close_icon"
+			android:focusable="true"
+			android:padding="@dimen/layout_margin"
+			android:src="@drawable/ic_close"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start|bottom"
+			android:orientation="vertical"
+			android:padding="@dimen/layout_margin">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/tiny_layout_margin"
+				android:gravity="center"
+				android:text="@string/withdrawal_card_title"
+				android:textColor="@color/colorCardTitle"
+				android:textSize="@dimen/default_text_size"/>
+
+			<TextView
+				android:id="@+id/tvTitleUsing"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/tiny_layout_margin"
+				android:fontFamily="@font/roboto_light"
+				android:textColor="@color/colorWhite"
+				android:textSize="@dimen/withdrawal_dialog_text_size"
+				tools:text="MTC"/>
+		</LinearLayout>
+	</FrameLayout>
+
+	<TextView
+		android:id="@+id/tvAmountUsing"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:drawableEnd="@drawable/ic_ruble"
+		android:drawablePadding="@dimen/tiny_layout_margin"
+		android:gravity="center"
+		android:padding="@dimen/layout_margin"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/withdrawal_dialog_using_amount_size"
+		tools:text="199"/>
+
+	<EditText
+		android:id="@+id/etDataUsing"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/layout_margin"
+		android:inputType="textPersonName"
+		android:maxLength="20"
+		android:textSize="@dimen/default_text_size"
+		tools:ignore="Autofill,LabelFor"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginEnd="@dimen/layout_margin"
+		android:layout_marginStart="@dimen/layout_margin"
+		android:background="@color/colorDivider"/>
+
+	<Button
+		android:id="@+id/btnPositiveUsing"
+		style="@style/AppTheme.Button.Secondary"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="@dimen/layout_margin"
+		android:fontFamily="@font/font_bold"
+		android:text="@android:string/ok"
+		android:textSize="@dimen/default_text_size"/>
+
+</LinearLayout>

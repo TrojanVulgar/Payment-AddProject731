@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--Fyber-->
+	<string name="fyber_id">123067</string>
+	<string name="fyber_security_key">62b3edb399525d8d235b6c1a5ea64763</string>
+
+	<!--Google-->
+	<string name="google_mobile_ads_id">ca-app-pub-3940256099942544~3347511713</string>
+	<string name="google_ad_video_id">ca-app-pub-3940256099942544/1033173712</string>
+	<string name="google_rewarded_video_id">ca-app-pub-3940256099942544/5224354917</string>
+
+	<!--AdColony-->
+	<string name="adColony_app_id">app95309e33366e44f188</string>
+	<string name="adColony_zone_id">vz91e65258b2484a4899</string>
+
+	<!--OfferToro-->
+	<string name="offerToro_secret_key">9c21a4e53521848ffdeaa060ad8ff98f</string>
+	<string name="offerToro_app_id">9741</string>
+	<string name="offerToro_user_id">TODO: update me</string>
+</resources>

@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'io.fabric'
+
+def appName = "Cash Rewards"
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.mobapp.earnmoney"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file(KEY_PATH)
+            storePassword KEY_PASSWORD
+            keyAlias ALIAS
+            keyPassword ALIAS_PASSWORD
+        }
+        debug {
+            storeFile file(KEY_PATH)
+            storePassword KEY_PASSWORD
+            keyAlias ALIAS_DEBUG
+            keyPassword ALIAS_PASSWORD
+        }
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            debuggable false
+            manifestPlaceholders = [appVersionSufix: appName]
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            lintOptions {
+                abortOnError false
+                checkReleaseBuilds false
+            }
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            manifestPlaceholders = [appVersionSufix: "$appName.${defaultConfig.versionName}"]
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "2g"
+        preDexLibraries = false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //    test
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //    support & google
+    implementation "com.android.support:appcompat-v7:${versions.support}"
+    implementation "com.android.support:support-v4:${versions.support}"
+    implementation "com.android.support:customtabs:${versions.support}"
+    implementation "com.android.support:support-media-compat:${versions.support}"
+    implementation "com.android.support:recyclerview-v7:${versions.support}"
+    implementation "com.android.support:design:${versions.support}"
+    implementation "com.android.support:cardview-v7:${versions.support}"
+    implementation "com.android.support:palette-v7:${versions.support}"
+    implementation "com.google.android.gms:play-services-auth:${versions.play_auth}"
+    implementation "com.google.android.gms:play-services-auth:${versions.play_auth}"
+    implementation "com.android.support.constraint:constraint-layout:${versions.constraint}"
+
+    //    firebase
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+
+    //    kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation "org.jetbrains.anko:anko-commons:${versions.anko}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutines}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutines}"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    //    network
+    implementation "com.squareup.okhttp3:okhttp:${versions.okHttp}"
+    implementation ("com.squareup.retrofit2:retrofit:${versions.retrofit}") {
+        // exclude Retrofit’s OkHttp peer-dependency module and define your own module import
+        exclude module: 'okhttp'
+    }
+
+    //  No need in this yet
+    //    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-experimental-adapter:1.0.0'
+    implementation "com.squareup.retrofit2:converter-gson:${versions.retrofit}"
+    implementation "com.squareup.okhttp3:logging-interceptor:${versions.okHttp}"
+
+    //    utils
+    implementation "com.jakewharton.timber:timber:${versions.timber}"
+    implementation("com.crashlytics.sdk.android:crashlytics:${versions.crash}@aar") {
+        transitive = true
+    }
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.airbnb.android:paris:1.0.0'
+    implementation 'com.mikhaellopez:lazydatepicker:1.0.0'
+    implementation 'net.danlew:android.joda:2.10.0'
+
+    //  view
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+    implementation "com.andkulikov:transitionseverywhere:1.8.1"
+    implementation 'com.github.baoyachi:StepView:1.9'
+
+    //    adds
+    implementation 'com.google.android.gms:play-services-ads:17.2.0'
+    implementation 'com.adcolony:sdk:3.3.10'
+    implementation 'com.fyber:fairbid-sdk:3.0.1'
+    implementation(name: 'OfferToroSdk-v3.1.11', ext: 'aar')
+//    implementation files('libs/fyber-sdk-8.22.0.jar')
+}
+
+apply plugin: 'com.google.gms.google-services'

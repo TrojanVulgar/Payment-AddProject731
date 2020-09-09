@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/shape_rounded_view"
+	android:backgroundTint="@color/colorPrimaryDark"
+	android:orientation="vertical"
+	android:paddingBottom="@dimen/mid_view_padding">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimaryDark"
+		android:padding="@dimen/mid_view_padding">
+
+		<ImageView
+			android:layout_width="@dimen/auth_promo_icon_size"
+			android:layout_height="@dimen/auth_promo_icon_size"
+			android:layout_gravity="center_horizontal"
+			android:contentDescription="@string/cd_promo_icon"
+			android:src="@drawable/ic_promo"/>
+	</FrameLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimaryDark"
+		android:gravity="center"
+		android:padding="@dimen/layout_margin"
+		android:text="@string/signin_promo_dialog_title"
+		android:textColor="@color/colorPrimaryText"
+		android:textSize="@dimen/default_text_size"/>
+
+	<EditText
+		android:id="@+id/et_promo"
+		style="@style/AppTheme.EditText"
+		android:layout_width="@dimen/auth_et_promo_width"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_margin="@dimen/layout_margin"
+		android:hint="@string/signin_promo_hint"
+		android:inputType="text"
+		android:textSize="@dimen/default_text_size"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginEnd="@dimen/layout_margin"
+		android:layout_marginStart="@dimen/layout_margin"
+		android:background="@color/colorDivider"/>
+
+	<Button
+		android:id="@+id/btn_promo_ok"
+		style="@style/AppTheme.Button.Secondary"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="@dimen/layout_margin"
+		android:fontFamily="@font/font_bold"
+		android:text="@string/signin_promo_skip"
+		android:textSize="@dimen/default_text_size"/>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+{
+  "project_info": {
+    "project_number": "984743398970",
+    "firebase_url": "https://com-mobapp-earnmoney.firebaseio.com",
+    "project_id": "com-mobapp-earnmoney",
+    "storage_bucket": "com-mobapp-earnmoney.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984743398970:android:5f7f8deced31d61a",
+        "android_client_info": {
+          "package_name": "com.mobapp.earnmoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984743398970-atmbssn8dq6vo8kgs8u7mt9357m47kpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobapp.earnmoney",
+            "certificate_hash": "45451a5cf240a70aa72a77a0dc2f82ed1bd71501"
+          }
+        },
+        {
+          "client_id": "984743398970-5utat5h48ept9cvh5v7345j6lsa344fc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobapp.earnmoney",
+            "certificate_hash": "9f678b1d9fc189d19e7695063a8475bf342ecccd"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPdKHrJe7_MoJeiInyobSga_KXtvxw0wI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984743398970-1v99b0o11a7s123qirov6hbj1tm5aaa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

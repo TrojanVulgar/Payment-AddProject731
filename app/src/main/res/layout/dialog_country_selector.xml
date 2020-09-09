@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/shape_rounded_view"
+	android:backgroundTint="@color/colorPrimary"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:padding="@dimen/mid_view_padding">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/layout_margin"
+		android:paddingBottom="@dimen/mid_view_padding"
+		android:text="@string/signin_auth_country_dialog_title"
+		android:textColor="@color/colorPrimaryText"
+		android:textSize="@dimen/default_text_size"/>
+
+	<android.support.v7.widget.AppCompatSpinner
+		android:id="@+id/spinner_auth_countries"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/layout_margin"
+		android:background="@drawable/shape_stroked_rounded"
+		android:popupBackground="@color/colorPrimary"
+		android:paddingEnd="0dp"
+		android:paddingStart="@dimen/small_view_padding"/>
+
+	<Button
+		android:id="@+id/btn_auth_select_country"
+		style="@style/AppTheme.Button.Secondary"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/signin_auth_btn_select_country"
+		android:textSize="@dimen/default_text_size"/>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary"
+	tools:context=".screens.MainActivity">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar_main"
+		android:layout_width="match_parent"
+		android:layout_height="?android:attr/actionBarSize"
+		android:background="@color/colorPrimary"
+		android:elevation="@dimen/elevation_layout_padding"
+		android:minHeight="?android:attr/actionBarSize"
+		android:theme="@style/ToolbarTheme"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageView
+			android:id="@+id/toolbar_iv_profile"
+			android:layout_width="@dimen/profile_toolbar_image_size"
+			android:layout_height="@dimen/profile_toolbar_image_size"
+			android:layout_marginEnd="@dimen/layout_margin"
+			android:background="?attr/selectableItemBackground"
+			android:contentDescription="@string/cd_toolbar_profile_image"
+			android:src="@drawable/ic_profile"/>
+
+		<ImageView
+			android:layout_width="@dimen/toolbar_image_width"
+			android:layout_height="?android:attr/actionBarSize"
+			android:gravity="center"
+			android:textColor="@color/colorWhite"
+			android:layout_gravity="center"
+			android:src="@drawable/logo"
+			android:padding="12dp"/>
+
+		<TextView
+			android:id="@+id/toolbar_balance"
+			android:layout_width="wrap_content"
+			android:layout_height="?android:attr/actionBarSize"
+			android:layout_gravity="end"
+			android:layout_marginEnd="@dimen/half_layout_margin"
+			android:drawableEnd="@drawable/ic_coin"
+			android:drawablePadding="@dimen/tiny_layout_margin"
+			android:gravity="center"
+			android:padding="@dimen/tiny_view_padding"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/toolbar_balance_size"
+			tools:text="1500"/>
+	</android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+		android:id="@+id/container_main"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/toolbar_main"/>
+
+	<android.support.design.widget.BottomNavigationView
+		android:id="@+id/bottomNavigation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimaryDark"
+		android:elevation="@dimen/layout_margin"
+		app:itemBackground="@color/colorPrimaryDark"
+		app:itemIconTint="@drawable/selector_bottom_navigation"
+		app:itemTextColor="@drawable/selector_bottom_navigation"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:menu="@menu/menu_bottom_navigation"/>
+	<!--app:labelVisibilityMode="labeled" TO ALWAYS SHOW TITLE-->
+
+	<LinearLayout
+		android:id="@+id/bgInfo"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/infoBackgroundColor"
+		android:clickable="true"
+		android:elevation="@dimen/layout_margin"
+		android:focusable="true"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<ImageView
+			android:id="@+id/ivInfoClose"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:contentDescription="@string/cd_info_close_icon"
+			android:focusable="true"
+			android:padding="@dimen/layout_margin"
+			android:src="@drawable/ic_close"/>
+
+		<TextView
+			android:id="@+id/tvInfo"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:lineSpacingExtra="@dimen/line_spacing"
+			android:padding="@dimen/layout_margin"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/default_text_size"
+			tools:text="@string/info_referral_description"/>
+	</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/mainMenuBackground"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/infoBackgroundColor"
+		android:clickable="true"
+		android:elevation="@dimen/layout_margin"
+		android:focusable="true"
+		android:visibility="gone">
+
+		<include
+			android:id="@+id/menuOther"
+			layout="@layout/menu_other"
+			android:layout_margin="@dimen/layout_margin"
+			android:layout_gravity="bottom"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	</FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

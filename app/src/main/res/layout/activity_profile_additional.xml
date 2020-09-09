@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimaryDark"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar_profile_additional"
+		android:layout_width="match_parent"
+		android:layout_height="?android:attr/actionBarSize"
+		android:background="@color/colorPrimary"
+		android:elevation="@dimen/elevation_disabled"
+		android:minHeight="?android:attr/actionBarSize"
+		android:theme="@style/ToolbarTheme"
+		app:title="@string/profile_additional_info_title"/>
+
+	<TextView
+		android:id="@+id/tvProfileAdditionalEmail"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:drawablePadding="@dimen/double_layout_margin"
+		android:drawableStart="@drawable/ic_profile_additional_email"
+		android:gravity="center_vertical"
+		android:padding="@dimen/layout_margin"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/profile_additional_text_size"
+		android:ellipsize="end"
+		android:maxLines="1"
+		tools:text="Email@gmail.comasdasdasdasdasdasdasdasdasdasd"/>
+
+	<TextView
+		android:id="@+id/tvProfileAdditionalName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/selectableItemBackground"
+		android:drawableEnd="@drawable/ic_profile_additional_change"
+		android:drawablePadding="@dimen/double_layout_margin"
+		android:drawableStart="@drawable/ic_profile_additional_name"
+		android:gravity="center_vertical"
+		android:padding="@dimen/layout_margin"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/profile_additional_text_size"
+		android:ellipsize="end"
+		android:maxLines="1"
+		tools:text="Usernamedgjksdlfgjlsdfgjsdlfgsdlglsdkjgsdlfgjlsdfgj"/>
+
+	<TextView
+		android:id="@+id/tvProfileAdditionalPhone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/selectableItemBackground"
+		android:drawableEnd="@drawable/ic_profile_additional_change"
+		android:drawablePadding="@dimen/double_layout_margin"
+		android:drawableStart="@drawable/ic_profile_additional_phone"
+		android:gravity="center_vertical"
+		android:padding="@dimen/layout_margin"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/profile_additional_text_size"
+		tools:text="+3059532403"/>
+
+	<TextView
+		android:id="@+id/tvProfileAdditionalGender"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/selectableItemBackground"
+		android:drawableEnd="@drawable/ic_profile_switch_gender"
+		android:drawablePadding="@dimen/double_layout_margin"
+		android:drawableStart="@drawable/ic_profile_additional_gender"
+		android:gravity="center_vertical"
+		android:maxLength="20"
+		android:padding="@dimen/layout_margin"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/profile_additional_text_size"
+		tools:text="Male"/>
+
+</LinearLayout>

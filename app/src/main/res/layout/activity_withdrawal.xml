@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary">
+
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/app_bar_withdrawal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<android.support.design.widget.CollapsingToolbarLayout
+			android:id="@+id/collapsing_toolbar_withdrawal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			app:layout_scrollFlags="scroll|exitUntilCollapsed"
+			app:titleEnabled="false">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="?android:attr/actionBarSize"
+				android:background="@color/colorPrimary"
+				android:orientation="vertical"
+				app:layout_collapseMode="parallax">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/layout_margin"
+					android:layout_marginTop="@dimen/layout_margin"
+					android:text="@string/withdrawal_take_output_method"
+					android:textColor="@color/colorWhite"
+					android:textSize="@dimen/default_text_size"/>
+
+				<android.support.v7.widget.RecyclerView
+					android:id="@+id/rvNewCards"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginBottom="@dimen/half_layout_margin"
+					android:clipToPadding="false"
+					android:orientation="horizontal"
+					android:paddingBottom="@dimen/layout_margin"
+					android:paddingStart="@dimen/layout_margin"
+					android:paddingTop="@dimen/layout_margin"
+					app:layoutManager="android.support.v7.widget.GridLayoutManager"
+					tools:ignore="RtlSymmetry" tools:listitem="@layout/item_details_progress"/>
+			</LinearLayout>
+
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar_withdrawal"
+				android:layout_width="match_parent"
+				android:layout_height="?android:attr/actionBarSize"
+				android:background="@color/colorPrimary"
+				android:elevation="@dimen/elevation_disabled"
+				android:minHeight="?android:attr/actionBarSize"
+				android:theme="@style/ToolbarTheme"
+				app:layout_collapseMode="pin"
+				app:title="@string/withdrawal_title">
+
+				<ImageView
+					android:id="@+id/ivWithdrawalInfo"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_gravity="end"
+					android:background="?attr/selectableItemBackground"
+					android:clickable="true"
+					android:contentDescription="@string/cd_info_icon"
+					android:focusable="true"
+					android:padding="@dimen/layout_margin"
+					android:src="@drawable/ic_info"/>
+			</android.support.v7.widget.Toolbar>
+		</android.support.design.widget.CollapsingToolbarLayout>
+	</android.support.design.widget.AppBarLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/shape_content_top_rounded"
+		android:backgroundTint="@color/colorPrimaryDark"
+		android:clipToPadding="false"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<android.support.v4.widget.NestedScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/half_layout_margin"
+			android:scrollbars="vertical">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:backgroundTint="@color/colorPrimaryDark"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="start|center_vertical"
+					android:layout_margin="@dimen/layout_margin"
+					android:text="@string/withdrawal_inventory_title"
+					android:textColor="@color/colorWhite"
+					android:textSize="@dimen/default_text_size"/>
+
+				<TextView
+					android:id="@+id/tvCardInInventory"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end|center_vertical"
+					android:layout_margin="@dimen/layout_margin"
+					android:textColor="@color/colorWhiteTransparent"
+					android:textSize="@dimen/default_text_size"
+					tools:text="@string/withdrawal_card_in_inventory"/>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_gravity="bottom"
+					android:background="@color/colorBalanceDivider"/>
+			</FrameLayout>
+		</android.support.v4.widget.NestedScrollView>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvInventoryCards"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:clipToPadding="false"
+			android:paddingBottom="@dimen/double_layout_margin"
+			android:paddingEnd="@dimen/mid_view_padding"
+			android:paddingStart="@dimen/mid_view_padding"
+			app:layoutManager="android.support.v7.widget.GridLayoutManager"
+			tools:listitem="@layout/item_details_progress"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/bgInfo"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/infoBackgroundColor"
+		android:clickable="true"
+		android:focusable="true"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<ImageView
+			android:id="@+id/ivInfoClose"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:contentDescription="@string/cd_info_close_icon"
+			android:focusable="true"
+			android:padding="@dimen/layout_margin"
+			android:src="@drawable/ic_close"/>
+
+		<TextView
+			android:id="@+id/tvInfoDescription"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="@dimen/layout_margin"
+			android:text="@string/info_referral_description"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/default_text_size"/>
+	</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

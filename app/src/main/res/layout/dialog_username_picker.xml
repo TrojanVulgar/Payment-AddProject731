@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/colorPrimaryDark">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimary">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/layout_margin"
+			android:textSize="@dimen/dialog_title"
+			android:textColor="@color/colorWhite"
+			android:text="@string/profile_additional_put_username_title"/>
+	</FrameLayout>
+
+	<EditText
+		android:id="@+id/etUsernameDialog"
+		android:layout_margin="@dimen/layout_margin"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="@string/profile_additional_username_hint"
+		android:maxLength="20"
+		android:inputType="textPersonName"
+		android:textSize="@dimen/default_text_size"
+		tools:ignore="Autofill"/>
+
+	<Button
+		android:id="@+id/btnUsernameDialogPositive"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="end"
+		android:layout_marginEnd="@dimen/layout_margin"
+		android:layout_marginBottom="@dimen/layout_margin"
+		android:text="@android:string/ok"
+		android:textSize="@dimen/default_text_size"/>
+
+</LinearLayout>

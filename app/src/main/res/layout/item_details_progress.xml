@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/shape_task_rounded_view"
+	android:elevation="@dimen/elevation_view_padding"
+	android:paddingBottom="10dp">
+
+	<TextView
+		android:id="@+id/tv_item_progress_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/half_layout_margin"
+		android:gravity="center"
+		android:maxLines="1"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/default_text_size"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="Проведено запусков"/>
+
+	<com.github.lzyzsd.circleprogress.DonutProgress
+		android:id="@+id/pb_item_progress"
+		android:layout_width="@dimen/profile_info_item_progress_size"
+		android:layout_height="@dimen/profile_info_item_progress_size"
+		android:layout_marginTop="@dimen/half_layout_margin"
+		app:donut_circle_starting_degree="90"
+		app:donut_finished_color="@color/colorGold"
+		app:donut_finished_stroke_width="@dimen/profile_info_item_stroke"
+		app:donut_text=""
+		app:donut_unfinished_color="@color/colorUnfilledProgress"
+		app:donut_unfinished_stroke_width="@dimen/profile_info_item_stroke"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/tv_item_progress_title"/>
+
+	<ImageView
+		android:id="@+id/iv_item_progress_center_image"
+		android:layout_width="@dimen/profile_info_item_center_image_size"
+		android:layout_height="@dimen/profile_info_item_center_image_size"
+		android:contentDescription="@string/cd_profile_info_item_level_center_image"
+		app:layout_constraintBottom_toBottomOf="@id/pb_item_progress"
+		app:layout_constraintEnd_toEndOf="@id/pb_item_progress"
+		app:layout_constraintStart_toStartOf="@id/pb_item_progress"
+		app:layout_constraintTop_toTopOf="@id/pb_item_progress"
+		tools:src="@drawable/ic_star"/>
+
+	<TextView
+		android:id="@+id/tv_item_progress_current_level"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/profile_info_item_level_icon_margin"
+		android:background="@drawable/shape_profile_level"
+		android:gravity="center"
+		android:textColor="@color/colorGold"
+		android:textSize="@dimen/profile_info_item_level_size"
+		app:layout_constraintEnd_toEndOf="@id/pb_item_progress"
+		app:layout_constraintStart_toStartOf="@id/pb_item_progress"
+		app:layout_constraintTop_toTopOf="@id/pb_item_progress"
+		tools:text="1"/>
+
+	<TextView
+		android:id="@+id/tv_item_progress_tasks_completed"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/layout_margin"
+		android:gravity="center"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/default_text_size"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/pb_item_progress"
+		tools:text="1/10"/>
+
+</android.support.constraint.ConstraintLayout>

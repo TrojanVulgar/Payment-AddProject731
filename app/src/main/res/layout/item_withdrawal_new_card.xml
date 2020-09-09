@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/bgNewCard"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="@dimen/withdrawal_card_width"
+	android:layout_height="@dimen/withdrawal_card_height"
+	android:background="@drawable/shape_rounded_view"
+	android:backgroundTint="@color/colorInfoItemsBackground"
+	android:foreground="?attr/selectableItemBackground"
+	android:focusable="true"
+	android:clickable="true"
+	android:elevation="@dimen/elevation">
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/gift_card"
+		android:contentDescription="@string/cd_image_for_withdrawal_cards"
+		android:scaleType="fitCenter"/>
+
+	<ImageView
+		android:id="@+id/ivWithdrawalLogo"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/withdrawal_logo_size"
+		android:layout_centerInParent="true"
+		android:contentDescription="@string/cd_image_for_withdrawal_logo"
+		android:src="@drawable/ic_star"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@id/tvWithdrawalTitle"
+		android:layout_below="@id/ivWithdrawalLogo"
+		android:layout_centerHorizontal="true"
+		android:layout_margin="@dimen/tiny_view_padding"
+		android:gravity="center"
+		android:text="@string/withdrawal_card_title"
+		android:textColor="@color/colorCardTitle"
+		android:textSize="@dimen/withdrawal_gift_text_size"/>
+
+	<TextView
+		android:id="@+id/tvWithdrawalTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="@dimen/layout_margin"
+		android:fontFamily="@font/roboto_light"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/default_text_size"
+		tools:text="MTC"/>
+
+</RelativeLayout>

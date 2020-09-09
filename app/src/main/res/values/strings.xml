@@ -1,0 +1,268 @@
+<!DOCTYPE resources [
+	<!ENTITY appname "Cash Rewards">
+	]>
+<resources>
+	<string name="app_name">&appname;</string>
+
+	<!--ApiInterface errors messages-->
+	<string name="all_connection_error">Check network settings. No internet connection</string>
+	<string name="all_internal_server_errors">Error! The server is not responding. Try later</string>
+	<string name="all_smthing_cancel">Cancel</string>
+	<string name="all_developer_errors">Application error. Contact support.</string>
+	<string name="all_wrong_fields">Incorrect data entered</string>
+	<string name="all_marathon_already_done">This bonus has already been received!</string>
+	<string name="all_screen_already_on_moderation">Your screenshot is already being checked.</string>
+	<string name="all_already_pending_operation">Run</string>
+	<string name="all_wrong_promo_error">The entered promotional code is incorrect</string>
+	<string name="all_game_limit_out">The daily limit on the game is exhausted. We are waiting for you tomorrow</string>
+	<string name="all_quiz_not_available">This quiz is not yet available.</string>
+	<string name="all_cannot_create_files">The file has not been created.</string>
+	<string name="all_in_development">In development</string>
+	<string name="all_need_to_update_app_from_market">Sorry for the inconvenience..\n\nTechnical work is underway. An updated version will be available soon in the Play Market.\n\nComing soon...</string>
+	<string name="all_smthing_accept">Confirm</string>
+	<string name="all_task_is_not_available">This task is not available, try again later.</string>
+
+	<!--Ban-->
+	<string name="ban_reason_spam">Suspicious activity was detected in your account and it has been blocked. To unlock your account, contact technical support.\nSuspicion of: spam and mailing</string>
+	<string name="ban_reason_profit">Suspicious activity was detected in your account and it has been blocked. To unlock your account, contact technical support.\nSuspicion on: winding up of funds, manipulation with balance</string>
+	<string name="ban_reason_referrals">Suspicious activity was detected in your account and it has been blocked. To unlock your account, contact technical support.\nSuspicion on: cheating referrals</string>
+	<string name="ban_reason_rules">Suspicious activity was detected in your account and it has been blocked. To unlock your account, contact technical support.\nSuspicion on: violation of application rules</string>
+
+	<!--SignIn-->
+	<string name="signin_auth_error">Authorisation Error. Try again</string>
+	<string name="signin_btn">Play</string>
+	<string name="signin_promo_dialog_title">Enter promo code here or skip this step.</string>
+	<string name="signin_promo_hint">Enter Promo Code</string>
+	<string name="signin_promo_skip">Next</string>
+	<string name="signin_promo_not_exist">This promo code does not exist</string>
+	<string name="signin_auth_country_dialog_title">Choose your country:</string>
+	<string name="signin_auth_btn_select_country">Confirm</string>
+
+	<!--Profile levels name-->
+	<string name="profile_level_name_1">Level %d Beginner</string>
+	<string name="profile_level_name_2">Level %d Student</string>
+	<string name="profile_level_name_3">Level %d Advanced</string>
+	<string name="profile_level_name_4">Level %d Master</string>
+	<string name="profile_level_name_5">Level %d Application lord</string>
+
+	<!--Start Activity-->
+	<string name="start_btn_title">Start</string>
+
+	<!--Info texts-->
+	<string name="info_referral_description">Do business on the referral program, share the promotional code with your friends and acquaintances - get from 15 to 30% of their income! How it works? Everyone who registers using your promo code will immediately receive a pleasant bonus, and you, in turn, will receive a percentage of the tasks completed by these users for life. Where can I find referrals? - In social networks, on thematic forums and in the comments under the video, or simply copy and send to a friend in any way convenient to you. Your referrals will work for you and bring you daily passive income.</string>
+	<string name="info_balance_description">Section \"Balance\" here you have access to all current information on the status of your balance and the amount of funds previously withdrawn by you. To withdraw funds click on the button \"Withdraw money\".</string>
+	<string name="info_withdrawal_description">Withdraw your funds to any payment system.\n\nTo withdraw funds, you need to choose a gift card of your payment system and the amount you want to withdraw, after which you must specify your billing information (billing data may vary depending on your payment system). Money will be transferred to your account instantly.</string>
+	<string name="info_task_description">Before you perform a task, first carefully read the conditions of the task, only after that proceed to their execution. Conditions of the job are on the card.</string>
+
+	<!--Profile-->
+	<string name="profile_overall_progress">Level: %s</string>
+	<string name="profile_additional_info_title">Profile data</string>
+	<string name="profile_additional_btn_title">Profile data</string>
+	<string name="profile_level_progress_title">Statistics</string>
+	<string name="profile_content_balance_title">Balance</string>
+	<string name="profile_content_policy_title">Privacy Policy</string>
+	<string name="profile_additional_put_username_title">Your name</string>
+	<string name="profile_additional_username_hint">Nickname</string>
+	<string name="profile_progress_tasks_title">Runs made</string>
+	<string name="profile_progress_videos_title">Videos Watched</string>
+	<string name="profile_progress_partners_title">Completed tasks</string>
+	<string name="profile_progress_referrals_title">Attracted freinds</string>
+	<string name="profile_progress_empty_title">Tasks</string>
+	<string name="profile_save_dialog_title">Save changes?</string>
+	<string name="profile_save_dialog_btn_ok">Yes</string>
+	<string name="profile_save_dialog_btn_cancel">No</string>
+	<string name="profile_details_saved_successfully">Changes saved successfully</string>
+	<string name="profile_cant_get_phone_number">Phone number is not tied to Google</string>
+
+	<!--Referral Activity-->
+	<string name="referral_title">Friends</string>
+	<string name="referral_copy_promo">Copy code</string>
+	<string name="referral_description">Invite friends\nand get a percentage\nfrom their income for life</string>
+	<string name="referral_details_title">Details</string>
+	<string name="referral_details_referrals">Friends</string>
+	<string name="referral_details_referral_balance">Friends Revenue</string>
+	<string name="referral_details_reward">Your percentage</string>
+	<string name="referral_details_paid">Money Withdrawn</string>
+	<string name="referral_promo_copied">Promo code copied successfully</string>
+
+	<!--Policy Activity-->
+	<string name="policy_toolbar_title">Privacy Policy</string>
+
+	<!--Withdrawal Activity-->
+	<string name="withdrawal_title">Take money</string>
+	<string name="withdrawal_inventory_title">Your gift cards</string>
+	<string name="withdrawal_card_in_inventory">Available: %d</string>
+	<string name="withdrawal_take_output_method">Choose output method</string>
+	<string name="withdrawal_card_title">Gift card</string>
+	<string name="withdrawal_dialog_choose_title">Choose card value</string>
+	<string name="withdrawal_dialog_nominal">Gift card %s</string>
+	<string name="withdrawal_dialog_btn_title">Buy for %s</string>
+	<string name="withdrawal_not_enough">There are not enough funds on your balance to buy this gift card.</string>
+	<string name="withdrawal_used_card_not_found_transaction">Gift card does not exist</string>
+
+	<!--Quiz-->
+	<string name="quiz_earned">Your winnings: %s</string>
+	<string name="quiz_correct_answer">Right answers %d/10</string>
+	<string name="quiz_dialog_earned">Your winnings %s</string>
+	<string name="quiz_dialog_correct_answers">Right answers %d out of 10 questions</string>
+	<string name="quiz_dialog_btn_positive">Pick up</string>
+	<string name="quiz_unavailable">Quiz not yet available</string>
+	<string name="quiz_how_to_get_award_info">Give 5 or more correct answers to questions and get 5 coins.\nFor 10 correct answers get 10 coins</string>
+	<string name="quiz_dialog_info_title">Info</string>
+
+	<!--Dialog bought card-->
+	<string name="bought_card_dialog_condition">Enter billing information</string>
+	<string name="bought_card_dialog_btn_ok">Withdraw</string>
+	<string name="bought_card_number_hint">+88888888888</string>
+	<string name="bought_card_webmoney_hint">R099999999999</string>
+	<string name="bought_card_yandexmoney_hint">99999999999999</string>
+	<string name="bought_card_email_hint">Email</string>
+	<string name="bought_card_warface_hint">Your ID or Email</string>
+	<string name="bought_card_steam_hint">User ID, user234</string>
+	<string name="bought_card_vk_hint">Your ID,Email or ID cabinet</string>
+	<string name="bought_card_empty_dialog_et">Enter the correct data</string>
+
+	<!--Balance Activity-->
+	<string name="balance_title">Balance</string>
+	<string name="balance_details_title">Details</string>
+	<string name="balance_details_paid">Received money</string>
+	<string name="balance_using_card_btn_title">Take money</string>
+	<string name="balance_available_to_award">Available for withdrawal: %s</string>
+
+	<!--Task Activity-->
+	<string name="task_card_button_title_find">To find</string>
+	<string name="task_card_button_title_install">Install</string>
+	<string name="task_additional_tasks_title">Job conditions</string>
+	<string name="progress_bar_earned_title">Received</string>
+	<string name="own_task_was_completed">Task successfully completed</string>
+	<string name="own_task_was_failed">You have not spent enough time in the app. Try again</string>
+	<string name="own_task_launch">Launch app</string>
+	<string name="own_task_found">To find</string>
+	<string name="own_task_direct">Install</string>
+	<string name="own_task_is_unavailable">Wait...</string>
+	<string name="own_task_rate">Rate and get +100</string>
+	<string name="own_task_time_in_app">Important! Launch the app and be in it at least %d seconds, make several transitions through the pages of the application.</string>
+	<string name="own_task_send_to_moderation">Submit for review</string>
+	<string name="own_task_direct_description">Install the application</string>
+	<string name="own_task_search_description">Find an app in the Play Market by icon and keyword %s. And install the application.</string>
+	<string name="own_task_only_rating_description">Rate the app as 5 stars. Take a screenshot and send for review.</string>
+	<string name="own_task_rating_with_feedback">Give the application a rating of 5 stars and write a positive review with a volume of at least 10-15 words. Important! Be sure to include the words in your review: %s. Take a screenshot and send for review.</string>
+	<string name="own_task_search_accept">Go to the Play Market, find the application by icon and keyword %s\. Install the application.\n\nImportant! After installation, be sure to return to the application. &appname;</string>
+	<string name="own_task_rating_accept">Go to the page of this application in the Play Market, and give it a rating which is specified in the conditions of the task.</string>
+	<string name="own_task_screenshot_sending_error">Error, failed to send a screenshot for verification. Contact support.</string>
+	<string name="own_task_screenshot_sending_to_server">Sending in progress……</string>
+	<string name="own_task_screenshot_sending_complete">Is done. Screenshot sent for review</string>
+	<string name="own_task_screenshot_was_send">Screenshot already on check.</string>
+	<string name="own_task_required_condition_text">Attention! Required condition: %s</string>
+	<string name="own_task_prelaunch_description_title">Additional terms</string>
+	<string name="own_task_preinstall_dialog_title">Important!</string>
+	<string name="own_task_preinstall_dialog_description">After installation, you need to return to the application &appname;</string>
+	<string name="task_disabled_title">Expect</string>
+	<string name="task_launch_will_be_active_at">Need to run through %02d:%02d</string>
+	<string name="task_was_completed_show_duration">Task successfully completed.\nYou have spent in the application at least %d seconds</string>
+	<string name="task_launch_title">Launches</string>
+	<string name="task_award_at_the_moment">Received: %.1f/%.1f</string>
+	<string name="tasks_btn_title_start">Open</string>
+	<string name="tasks_btn_title_continue">Continue</string>
+	<string name="tasks_number">The task #%d</string>
+	<string name="task_cant_get_screen">Error. Could not get a screenshot</string>
+	<string name="task_launch_number">%d Launch</string>
+	<plurals name="own_task_description_days">
+		<item quantity="one"> Run %d day</item>
+		<item quantity="few"> Run %d day</item>
+		<item quantity="many"> Run %d days</item>
+		<item quantity="other"> Run %d days</item>
+	</plurals>
+	<plurals name="own_task_description_hours">
+		<item quantity="few">every %d hours</item>
+		<item quantity="many">every %d hours</item>
+		<item quantity="other">every %d hours</item>
+	</plurals>
+
+	<!--Dialog info for task conditions-->
+	<string name="own_task_conditions_dialog_title">Follow these conditions\n%1$s</string>
+	<string name="own_task_conditions_dialog_title_rating_and_feedback">\"Leave a review and rating\"</string>
+	<string name="own_task_conditions_dialog_title_only_rating">\"Rate\"</string>
+	<string name="own_task_conditions_dialog_info_only_rating">1.Go to the Play Market on the app page, give it 5 stars.\n\n2.Like the first 5 positive reviews of other users.\n\n3.Take a screenshot where your grade is clearly visible and send it for review.\n\n</string>
+	<string name="own_task_conditions_dialog_info_only_rating_attention">Important! You do not need to write a review.</string>
+	<string name="own_task_conditions_dialog_positive_button_text">Rate</string>
+
+	<!--Tasks Fragment-->
+	<string name="tasks_marathon_title">Daily bonuses</string>
+	<string name="tasks_title">CPI Offers from\n&appname;</string>
+	<string name="tasks_title_second">Tasks</string>
+	<string name="tasks_new_tasks_title">New tasks</string>
+	<string name="tasks_active_tasks">Active tasks</string>
+	<string name="tasks_partners_title">Bonus\ntasks</string>
+	<string name="tasks_description">Earn\non install apps.</string>
+	<string name="tasks_partners_description">Perform tasks\nfrom our partners\nand get big rewards.</string>
+	<string name="tasks_primary_button_title">In detail</string>
+	<string name="tasks_additional_info">Perform various tasks, download cool games and applications, play and have fun getting money for it! To start earning, select a task from the list and proceed to fulfill the conditions, fulfill all the specified conditions gradually. Important! Read the assignment conditions carefully.</string>
+	<string name="tasks_partners_additional_info">In the "Bonus Tasks" section, tasks from our best partners are available to you. We work only with proven partners who provide us with top job with a large payment for implementation. Important! Before completing assignments, carefully read the conditions and strictly adhere to them, otherwise the reward may not be credited and you will not receive anything. If you have fulfilled all the conditions of the task and have not received your reward, contact the support of the partner whose tasks you performed. Round-the-clock support will quickly answer all your questions.</string>
+	<string name="partner_btn_title_start">Go to</string>
+
+	<!--Entertainment Fragment-->
+	<string name="entertainment_quiz_additional_info">Earn answering hundreds of interesting questions.</string>
+	<string name="entertainment_games_additional_info">Play exciting mini-games\nand get rewards.</string>
+	<string name="entertainment_quiz_title">Quizzes</string>
+	<string name="entertainment_games_title">Mini games</string>
+
+	<!--Games-->
+	<string name="games_limit_over">Today your limit is reached, come back tomorrow.</string>
+
+	<!--Marathon-->
+	<string name="marathon_day_title">Day %d</string>
+	<string name="marathon_done_message">Bonus received: %.1f</string>
+	<string name="marathon_done">Is done</string>
+	<string name="marathon_ready">To take</string>
+	<string name="marathon_soon">Later</string>
+
+	<!--Video Fragment-->
+	<string name="video_description">Available videos</string>
+	<string name="video_card_title">Video Zone</string>
+	<string name="video_btn_title">Watch</string>
+	<string name="video_card_description">Earn on views \ninteresting videos\n\n\n\nAvailable Views: %d</string>
+	<string name="adds_content_empty">No video available yet, try again later.</string>
+	<string name="adds_error">Error, try again later or contact support.</string>
+	<string name="adds_look_full_video">Attention! Watch the video to the end!</string>
+	<string name="adds_something_went_wrong">Sorry for the inconvenience, something went wrong.</string>
+	<string name="adds_video_unavailable">Today video is not available.</string>
+	<string name="adds_reward_successful_received">Bonus received</string>
+	<string name="adds_warning">Ad</string>
+
+	<!--Game Fragment-->
+	<string name="game_unpaid_mode">You have reached the daily earnings limit in the game. Come back tomorrow or continue playing without reward.</string>
+	<string name="game_unpaid_mode_btn_title">Continue</string>
+	<string name="entertainment_btn_title">Play</string>
+
+	<!--Menu other-->
+	<string name="menu_other_profile">Account</string>
+	<string name="menu_other_balance">Wallet</string>
+	<string name="menu_other_referral">Friends</string>
+	<string name="menu_other_policy">Privacy Policy</string>
+
+	<!--Bottom navigation-->
+	<string name="navigation_tasks_title">Offers</string>
+	<string name="navigation_videos_title">Videos</string>
+	<string name="navigation_games_title">Games</string>
+	<string name="navigation_other_title">More</string>
+
+	<!--Notifications-->
+	<string name="notification_channel">&appname;</string>
+	<string name="notification_description">&appname; notification channel</string>
+	<string name="notification_id">net.&appname;.android.CHANNEL_ID</string>
+
+	<!--ContentDescription-->
+	<string name="cd_promo_icon" translatable="false">Icon in promo dialog</string>
+	<string name="cd_profile_card_background">Card background image of level for profile</string>
+	<string name="cd_profile_info_item_level_center_image">Image of type of task</string>
+	<string name="cd_toolbar_profile_image">Image in main toolbar to change container to profileFragment</string>
+	<string name="cd_info_icon">Info image</string>
+	<string name="cd_info_close_icon">Info close image</string>
+	<string name="cd_image_for_withdrawal_cards">Image for withdrawal cards</string>
+	<string name="cd_image_for_withdrawal_logo">Image in withdrawal card which show partner logo</string>
+	<string name="cd_marathon_image">Image of safe for marathon</string>
+	<string name="cd_tasks_logo_image">Image of task logo</string>
+	<string name="cd_task_card_logo">Image of task card logo</string>
+</resources>
+

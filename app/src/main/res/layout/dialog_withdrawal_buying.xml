@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="@color/colorPrimary"
+	android:orientation="vertical">
+
+	<FrameLayout
+		android:id="@+id/backgroundColorBuying"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimaryDark">
+
+		<ImageView
+			android:id="@+id/ivLogoBuying"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/withdrawal_logo_size"
+			android:layout_gravity="start|top"
+			android:layout_marginStart="@dimen/layout_margin"
+			android:layout_marginTop="@dimen/layout_margin"
+			android:contentDescription="@string/cd_image_for_withdrawal_logo"/>
+
+		<ImageView
+			android:layout_width="@dimen/withdrawal_dialog_gift_size"
+			android:layout_height="@dimen/withdrawal_dialog_gift_size"
+			android:layout_gravity="end"
+			android:background="@drawable/gift_card"
+			android:contentDescription="@string/cd_image_for_withdrawal_cards"/>
+
+		<ImageView
+			android:id="@+id/ivCloseBuying"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|top"
+			android:clickable="true"
+			android:contentDescription="@string/cd_info_close_icon"
+			android:focusable="true"
+			android:padding="@dimen/layout_margin"
+			android:src="@drawable/ic_close"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start|bottom"
+			android:orientation="vertical"
+			android:padding="@dimen/layout_margin">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/tiny_layout_margin"
+				android:gravity="center"
+				android:text="@string/withdrawal_card_title"
+				android:textColor="@color/colorCardTitle"
+				android:textSize="@dimen/default_text_size"/>
+
+			<TextView
+				android:id="@+id/tvTitleBuying"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/tiny_layout_margin"
+				android:fontFamily="@font/roboto_light"
+				android:textColor="@color/colorWhite"
+				android:textSize="@dimen/withdrawal_dialog_text_size"
+				tools:text="MTC"/>
+		</LinearLayout>
+	</FrameLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/font_light"
+		android:padding="@dimen/layout_margin"
+		android:text="@string/withdrawal_dialog_choose_title"
+		android:textAllCaps="true"
+		android:textColor="@color/colorWhite"
+		android:textSize="@dimen/withdrawal_dialog_text_size"/>
+
+	<FrameLayout
+		android:id="@+id/nominalFirst"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		android:paddingEnd="@dimen/layout_margin"
+		android:paddingStart="@dimen/layout_margin">
+
+		<TextView
+			android:id="@+id/tvNominalFirst"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start|center_vertical"
+			android:drawableEnd="@drawable/ic_ruble_small"
+			android:padding="@dimen/layout_margin"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/withdrawal_dialog_text_size"
+			tools:text="Karta 990"/>
+
+		<CheckBox
+			android:id="@+id/cbNominalFirst"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|center_vertical"
+			android:checked="true"
+			android:clickable="false"
+			android:theme="@style/MyCheckbox"/>
+	</FrameLayout>
+
+	<FrameLayout
+		android:id="@+id/nominalSecond"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		android:paddingEnd="@dimen/layout_margin"
+		android:paddingStart="@dimen/layout_margin">
+
+		<TextView
+			android:id="@+id/tvNominalSecond"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start|center_vertical"
+			android:drawableEnd="@drawable/ic_ruble_small"
+			android:padding="@dimen/layout_margin"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/withdrawal_dialog_text_size"
+			tools:text="Karta 990"/>
+
+		<CheckBox
+			android:id="@+id/cbNominalSecond"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|center_vertical"
+			android:clickable="false"
+			android:theme="@style/MyCheckbox"/>
+	</FrameLayout>
+
+	<FrameLayout
+		android:id="@+id/nominalThird"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		android:paddingEnd="@dimen/layout_margin"
+		android:paddingStart="@dimen/layout_margin">
+
+		<TextView
+			android:id="@+id/tvNominalThird"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start|center_vertical"
+			android:drawableEnd="@drawable/ic_ruble_small"
+			android:padding="@dimen/layout_margin"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/withdrawal_dialog_text_size"
+			tools:text="Karta 990"/>
+
+		<CheckBox
+			android:id="@+id/cbNominalThird"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|center_vertical"
+			android:clickable="false"
+			android:theme="@style/MyCheckbox"/>
+	</FrameLayout>
+
+	<FrameLayout
+		android:id="@+id/nominalFourth"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/selectableItemBackground"
+		android:clickable="true"
+		android:focusable="true"
+		android:paddingEnd="@dimen/layout_margin"
+		android:paddingStart="@dimen/layout_margin">
+
+		<TextView
+			android:id="@+id/tvNominalFourth"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start|center_vertical"
+			android:drawableEnd="@drawable/ic_ruble_small"
+			android:padding="@dimen/layout_margin"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/withdrawal_dialog_text_size"
+			tools:text="Karta 990"/>
+
+		<CheckBox
+			android:id="@+id/cbNominalFourth"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|center_vertical"
+			android:clickable="false"
+			android:theme="@style/MyCheckbox"/>
+	</FrameLayout>
+
+	<Button
+		android:id="@+id/btnPositiveBuying"
+		style="@style/AppTheme.Button.Secondary"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/layout_margin"
+		android:textSize="@dimen/default_text_size"
+		tools:text="Buy"/>
+</LinearLayout>

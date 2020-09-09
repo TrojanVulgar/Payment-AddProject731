@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/profile_card_height"
+	android:backgroundTint="@color/colorPrimary"
+	app:cardCornerRadius="@dimen/card_corner_radius"
+	app:cardElevation="@dimen/card_elevation">
+
+	<ImageView
+		android:id="@+id/ivBackgroundImage"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/profile_card_height"
+		android:background="@drawable/bg_tasks_card"
+		android:contentDescription="@string/cd_profile_card_background"
+		android:scaleType="fitCenter"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<android.support.constraint.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_constraintGuide_percent="0.5">
+
+		<android.support.constraint.Guideline android:id="@+id/guideline_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_percent="0.45"/>
+
+		<TextView
+			android:id="@+id/tvTasksTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/empty_dp"
+			android:layout_marginBottom="@dimen/half_layout_margin"
+			android:gravity="start"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/title_text_size"
+			android:fontFamily="@font/font_arial_bold"
+			app:layout_constraintBottom_toTopOf="@id/guideline_title"
+			app:layout_constraintStart_toEndOf="@id/guideline_description_top2"
+			tools:text="Программные\nзадания"/>
+
+		<android.support.constraint.Guideline
+			android:id="@+id/guideline_description_top"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="vertical" app:layout_constraintGuide_percent="0.68"/>
+
+		<android.support.constraint.Guideline
+			android:id="@+id/guideline_description_top2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="vertical" app:layout_constraintGuide_percent="0.076"/>
+
+		<android.support.constraint.Guideline
+			android:id="@+id/guideline_description_bottom"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			app:layout_constraintGuide_percent="0.69"/>
+
+		<TextView
+			android:id="@+id/tvTasksDescription"
+			android:layout_width="@dimen/empty_dp"
+			android:layout_height="@dimen/empty_dp"
+			android:gravity="top"
+			android:textColor="@color/colorDescription"
+			android:textSize="@dimen/description_text_size"
+			android:layout_marginTop="@dimen/layout_margin"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@id/guideline_description_top2"
+			app:layout_constraintEnd_toStartOf="@id/guideline_description_top"
+			app:layout_constraintTop_toBottomOf="@id/guideline_title"
+			tools:text="@string/tasks_description"/>
+
+		<TextView
+			android:id="@+id/tvTasksPrimaryButton"
+			android:layout_width="@dimen/empty_dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/layout_margin"
+			android:layout_marginEnd="@dimen/half_layout_margin"
+			android:background="?attr/selectableItemBackground"
+			android:gravity="center"
+			android:maxLines="1"
+			android:padding="@dimen/half_layout_margin"
+			android:textColor="@color/colorCardButtonText"
+			android:textSize="@dimen/default_text_size"
+			android:visibility="gone"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			tools:text="@string/referral_copy_promo"/>
+	</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

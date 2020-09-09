@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape android:shape="oval">
+			<stroke android:width="@dimen/profile_info_item_stroke"
+				android:color="@color/colorBalanceIcon"/>
+			<size android:width="@dimen/profile_icon_size"
+				android:height="@dimen/profile_icon_size"/>
+			<solid android:color="@color/colorInfoItemsBackground"/>
+		</shape>
+	</item>
+</layer-list>

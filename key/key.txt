@@ -1,0 +1,5 @@
+KEY_PASSWORD=mafia_advertapp
+ALIAS=mafia_alias
+ALIAS_DEBUG=mafia_debug_alias
+ALIAS_PASSWORD=mafia_advertapp_alias
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#121121</color>
+    <color name="colorPrimaryDark">#1a192f</color>
+    <color name="colorAccent">#131E2A</color>
+
+	<color name="colorWhite">@android:color/white</color>
+	<color name="colorWhiteTransparent">#c8ffffff</color>
+	<color name="colorWindowBg">#f5f3f3</color>
+	<color name="colorBalanceDivider">#14ffffff</color>
+	<color name="colorDivider">#80BDBDBD</color>
+	<color name="colorInfoIcon">#c8ffffff</color>
+	<color name="colorDescription">#CCFFFFFF</color>
+
+	<!--Info-->
+	<color name="infoBackgroundColor">#dc000000</color>
+
+	<!--Widget-->
+	<color name="widgetBackgroundColor">#c8000000</color>
+
+	<!--Marathon-->
+	<color name="marathon_background">#FF25252B</color>
+
+	<!--Text colors-->
+	<color name="colorPrimaryText">#ffffff</color>
+	<color name="colorSecondaryText">#757575</color>
+	<color name="colorEditTextBg">#FF313138</color>
+
+	<!--Bottom Navigation View-->
+	<color name="colorBottomNavigationSelectedItem">#FFFFFF</color>
+	<color name="colorBottomNavigationUnselectedItem">#66FFFFFF</color>
+
+	<!--Progress Bars-->
+	<color name="colorGold">#FF7a41f0</color>
+	<color name="colorProgress">#CB23A7</color>
+	<color name="colorUnfilledProgress">#1AFFFFFF</color>
+	<color name="colorProfileAdditionalButton">#FFC0C0C2</color>
+	<color name="colorScoreProgress">#00F5D8</color>
+	<color name="colorReferralProgress">#8262dd</color>
+	<color name="colorReferralProgressEnd">#61bafe</color>
+	<color name="colorReferralIcon">#6cb4fc</color>
+	<color name="colorBalanceProgress">#5866e3</color>
+	<color name="colorBalanceProgressEnd">#ed4ad9</color>
+	<color name="colorBalanceIcon">#5c4fe0</color>
+
+	<!--Profile-->
+	<color name="colorInfoItemsBackground">#FF25252B</color>
+	<color name="colorProfileAction">#68D35F</color>
+
+	<!--Cards-->
+	<color name="colorCardViewButtonBg">#49ccc8c8</color>
+	<color name="colorCardButtonText">#c8ffffff</color>
+
+	<!--Withdrawal-->
+	<color name="colorInventoryBackground">#1B1B20</color>
+	<color name="colorCardTitle">#96ffffff</color>
+
+	<!--Withdrawal logo colors-->
+	<color name="colorWebmoney">#036CB5</color>
+	<color name="colorQiwi">#FF8C00</color>
+	<color name="colorPaypal">#009cde</color>
+	<color name="colorSteam">#132E62</color>
+	<color name="colorYandex">#d2ff0000</color>
+	<color name="colorMTC">#ED1C24</color>
+	<color name="colorTele2">#1F2229</color>
+	<color name="colorMegafon">#00985F</color>
+	<color name="colorBeeline">#FCB534</color>
+	<color name="colorWOT">#1D1D1B</color>
+	<color name="colorWarface">#aa000000</color>
+	<color name="colorVK">#5181B8</color>
+
+	<!--Tasks-->
+	<color name="colorTasksBackground">#1B1B20</color>
+	<color name="colorSelectedButton">#fff</color>
+	<color name="colorUnselectedButton">#91ffffff</color>
+	<color name="colorUnselectedUnderline">#FF28282D</color>
+
+	<!--Marathon-->
+	<color name="marathon_done">#6AD35F</color>
+	<color name="marathon_ready">#F69F32</color>
+	<color name="marathon_soon">#818181</color>
+
+	<!--Quiz-->
+	<color name="colorQuizCorrectAnswer">#9900FF15</color>
+	<color name="colorQuizIncorrectAnswer">#99FF0008</color>
+
+	<color name="colorPolicyAccept">#69D35F</color>
+	<color name="colorPolicyReject">#FF4646</color>
+
+	<!--Balance-->
+	<color name="colorBalanceCard">#5866e3</color>
+
+	<!--Items background-->
+	<color name="colorBackgroundGradientStart">#302d4c</color>
+	<color name="colorBackgroundGradientEnd">#302d4c</color>
+	<color name="colorBackgroundMarathonGradientEnd">#2E3847</color>
+
+</resources>

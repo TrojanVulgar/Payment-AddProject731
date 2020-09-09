@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/loading_item"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/loading_item_height"
+	android:background="@drawable/shape_task_rounded_view"
+	android:clickable="false"
+	android:elevation="@dimen/elevation">
+
+	<android.support.v4.widget.ContentLoadingProgressBar
+		style="@style/AppTheme.ProgressBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:indeterminate="true"
+		android:indeterminateBehavior="repeat"
+		android:interpolator="@android:anim/accelerate_interpolator"/>
+
+</FrameLayout>

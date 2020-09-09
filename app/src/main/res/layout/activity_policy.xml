@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+	android:background="@color/colorPrimary"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar_policy"
+		android:layout_width="match_parent"
+		android:layout_height="?android:attr/actionBarSize"
+		android:background="@color/colorPrimary"
+		android:elevation="@dimen/elevation_disabled"
+		android:minHeight="?android:attr/actionBarSize"
+		android:theme="@style/ToolbarTheme"
+		app:title="@string/policy_toolbar_title"/>
+
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingEnd="@dimen/layout_margin"
+		android:paddingStart="@dimen/layout_margin">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tvPrivacy"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="@dimen/half_layout_margin"
+				android:paddingTop="@dimen/layout_margin"
+				android:textColor="@color/colorWhite"
+				android:textSize="@dimen/default_text_size"
+				android:textColorLink="@color/colorGold"
+				android:clickable="true"
+				android:focusable="true"
+				tools:text=";ladsgsl;dkfa"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/privacy_policy_button_reject"
+					style="@style/AppTheme.Button.PolicyReject"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/layout_margin"
+					android:layout_marginEnd="@dimen/half_layout_margin"
+					android:layout_marginTop="@dimen/half_layout_margin"
+					android:layout_weight="1"
+					android:text="@string/privacy_policy_reject_button_title"
+					android:textSize="@dimen/default_text_size"/>
+
+				<Button
+					android:id="@+id/privacy_policy_button_accept"
+					style="@style/AppTheme.Button.PolicyAccept"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/layout_margin"
+					android:layout_marginStart="@dimen/half_layout_margin"
+					android:layout_marginTop="@dimen/half_layout_margin"
+					android:layout_weight="1"
+					android:text="@string/privacy_policy_confirm_button_title"
+					android:textSize="@dimen/default_text_size"/>
+			</LinearLayout>
+		</LinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+</LinearLayout>
